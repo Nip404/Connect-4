@@ -76,7 +76,7 @@ class Board:
                 self.move(pygame.mouse.get_pos())
 
             else:
-                for user_evt in custom_events:
+                for user_evt in custom_events.keys():
                     if event.type == user_evt:
                         try:
                             custom_events[user_evt]()
